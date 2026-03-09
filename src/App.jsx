@@ -167,7 +167,7 @@ const COURSES = [
   },
   {
     title: 'Programação Orientada a Objetos (POO)',
-    institution: '',
+    institution: 'Bradesco',
     status: 'Concluído',
     statusColor: 'emerald',
     icon: '🧩',
