@@ -72,18 +72,21 @@ const COMMUNITIES = [
     role: 'Líder de Comunidade',
     description: 'Comunidade que une mulheres desenvolvedoras PHP no Nordeste.',
     emoji: '🚀',
+    link: 'https://www.instagram.com/arretadasdophp?igsh=YWpqdnoxZzIyN2R0',
   },
   {
     name: 'Comunidade HouseJs',
     role: 'Líder Feminina',
     description: 'Comunidade de desenvolvimento JavaScript com foco em inclusão feminina.',
     emoji: '💛',
+    link: 'https://www.instagram.com/comunidadehousejs?igsh=MWx5Z3V6eW14eW94aw==',
   },
   {
     name: 'Técnicas Brasil',
     role: 'Fundadora',
     description: 'Comunidade nacional que conecta mulheres da área de manutenção e tecnologia.',
     emoji: '🌐',
+    link: 'https://www.instagram.com/tecnicasbrasil_?igsh=cXFyNXp5czRvZnQ1',
   },
 ];
 
