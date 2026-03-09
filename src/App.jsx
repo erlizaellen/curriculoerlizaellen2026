@@ -289,7 +289,13 @@ function ProjectCard({ project }) {
 
 function CommunityCard({ community }) {
   return (
-    <div className="card-hover flex items-center gap-4 p-5 bg-white rounded-2xl border border-slate-100 shadow-sm">
+    <a
+      href={community.link}
+      target="_blank"
+      rel="noreferrer"
+      className="card-hover flex items-center gap-4 p-5 bg-white rounded-2xl border border-slate-100 shadow-sm transition-transform hover:-translate-y-1 hover:shadow-md cursor-pointer block"
+      title={`Acessar Instagram de ${community.name}`}
+    >
       <div className="text-3xl w-12 h-12 flex items-center justify-center bg-indigo-50 rounded-xl flex-shrink-0">
         {community.emoji}
       </div>
@@ -298,10 +304,11 @@ function CommunityCard({ community }) {
         <p className="text-indigo-600 text-sm font-semibold">{community.role}</p>
         <p className="text-slate-500 text-sm mt-0.5 truncate">{community.description}</p>
       </div>
-      <ChevronRight size={16} className="text-slate-300 flex-shrink-0" />
-    </div>
+      <ChevronRight size={16} className="text-indigo-400 flex-shrink-0" />
+    </a>
   );
 }
+
 
 function EducationItem({ item }) {
   const badgeColors = {
