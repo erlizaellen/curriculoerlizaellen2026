@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6366f1;
+  border-radius: 3px;
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.delay-100 {
+  animation-delay: 0.1s;
+  opacity: 0;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+.delay-300 {
+  animation-delay: 0.3s;
+  opacity: 0;
+}
+
+.delay-400 {
+  animation-delay: 0.4s;
+  opacity: 0;
+}
+
+.delay-500 {
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Card hover effect */
+.card-hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(99, 102, 241, 0.12);
+}
+
+/* ── ESTILOS DE IMPRESSÃO / PDF ─────────────────────────────────────────── */
+@media print {
+
+  /* Oculta elementos da UI que não devem ir para o PDF */
+  .no-print {
+    display: none !important;
+  }
+
+  /* Remove backgrounds coloridos pesados para economizar tinta */
+  body {
+    background: white !important;
+    font-size: 11pt;
+  }
+
+  /* Remove sombras e blurs decorativos */
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* Remove blobs decorativos do header */
+  header>div:first-child,
+  header>div:nth-child(2) {
+    display: none !important;
+  }
+
+  /* Garante que cards não quebrem no meio de uma página */
+  .card-hover {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Ajusta padding do header para PDF */
+  header .relative {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  /* Remove animações */
+  .animate-fade-in-up {
+    animation: none !important;
+    opacity: 1 !important;
+  }
+
+  [class*="delay-"] {
+    animation: none !important;
+    opacity: 1 !important;
+  }
+}
