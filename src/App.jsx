@@ -19,8 +19,8 @@ import {
 
 // ─── DADOS DO CURRÍCULO ─────────────────────────────────────────────────────
 const SKILLS = [
-  'Java', 'JavaScript', 'Python', 'React', 'Node.js',
-  'SQL', 'DevOps', 'n8n', 'Supabase',
+  'Java', 'JavaScript', 'Python', 'React', 'Node.js', 'PostgreSQL',
+  'SQL', 'DevOps', 'N8n', 'Supabase',
 ];
 
 const PROJECTS = [
@@ -28,7 +28,7 @@ const PROJECTS = [
     title: 'Bem Pet',
     role: 'Tech Lead',
     description:
-      'Plataforma web para adoção responsável de pets, desenvolvida em equipe com foco em UX e segurança. Implementação de autenticação JWT, banco de dados Supabase e API REST com Node.js.',
+      'Plataforma web para clinicas pets parceiras e cupons de descontos , desenvolvida em equipe com foco em UX e segurança. Implementação de autenticação JWT, banco de dados Supabase e API REST com Node.js.',
     tech: ['React', 'Node.js', 'JWT', 'Supabase'],
     color: 'indigo',
     emoji: '🐾',
@@ -486,13 +486,16 @@ export default function App() {
       {/* ── BOTÕES DE DOWNLOAD ── */}
       <div className="no-print max-w-4xl mx-auto px-6 pb-8 flex flex-wrap justify-center gap-4">
         {/* PDF */}
-        <button
-          onClick={handlePrint}
+        <a
+          href="/curriculo-erliza.pdf"
+          download="Curriculo_Erliza_Ellen2026.pdf"
+          target="_blank"
+          rel="noreferrer"
           className="flex items-center gap-2 px-6 py-3 bg-indigo-600 hover:bg-indigo-700 active:scale-95 text-white font-semibold rounded-xl shadow-lg shadow-indigo-500/30 transition-all"
         >
           <FileDown size={18} />
           Baixar em PDF
-        </button>
+        </a>
 
         {/* Word */}
         <button
