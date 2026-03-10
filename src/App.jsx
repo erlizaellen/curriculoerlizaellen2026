@@ -487,7 +487,7 @@ export default function App() {
       <div className="no-print max-w-4xl mx-auto px-6 pb-8 flex flex-wrap justify-center gap-4">
         {/* PDF */}
         <a
-          href="/curriculo-erliza.pdf"
+          href="/Curriculo_Erliza_Ellen2026.pdf"
           download="Curriculo_Erliza_Ellen2026.pdf"
           target="_blank"
           rel="noreferrer"
