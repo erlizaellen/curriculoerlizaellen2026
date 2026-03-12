@@ -12,6 +12,7 @@ import {
   ChevronRight,
   FileDown,
   FileText,
+  MessageCircle,
 } from 'lucide-react';
 
 // Se o arquivo de gerar Word existir na mesma pasta, descomente a linha abaixo:
@@ -21,6 +22,10 @@ import {
 const SKILLS = [
   'Java', 'JavaScript', 'Python', 'React', 'Node.js', 'PostgreSQL',
   'SQL', 'DevOps', 'N8n', 'Supabase',
+];
+const SKILLS_SUPORTE = [
+  'Suporte N1/N2', 'Google Workspace',
+  'Manutenção de Hardware', 'Linux/Windows', 'DevOps', 'N8n Automations'
 ];
 
 const PROJECTS = [
@@ -179,7 +184,7 @@ const COURSES = [
     status: 'Concluído',
     statusColor: 'emerald',
     icon: '🔢',
-    year: '',
+    year: '2026',
   },
   {
     title: 'Semana do Python',
@@ -376,7 +381,7 @@ export default function App() {
               <span className="gradient-text text-indigo-600">Alexsandra F. da Costa</span>
             </h1>
             <p className="mt-3 text-lg sm:text-xl text-slate-500 font-medium">
-              Desenvolvedora Full Stack
+              Desenvolvedora Full Stack Jr
             </p>
           </div>
 
@@ -407,6 +412,15 @@ export default function App() {
               <Mail size={16} />
               erlizaellen@gmail.com
             </a>
+            <a
+              href="https://wa.me/5585996506534"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-2 px-5 py-2.5 bg-emerald-500 text-white text-sm font-semibold rounded-xl hover:bg-emerald-600 transition-colors shadow-md shadow-emerald-500/20"
+            >
+              <MessageCircle size={16} />
+              WhatsApp
+            </a>
           </div>
         </div>
       </header>
@@ -419,28 +433,49 @@ export default function App() {
           <SectionTitle icon={Sparkles}>Sobre Mim</SectionTitle>
           <div className="bg-white rounded-2xl border border-slate-100 shadow-sm p-7">
             <p className="text-slate-600 leading-relaxed text-base">
-              Atuo como <span className="font-semibold text-indigo-600">Desenvolvedora Full Stack</span>, aplicando conhecimentos em{' '}
-              <span className="font-medium text-slate-700">programação orientada a objetos, resolução de problemas e lógica de programação</span>.
-              Busco participar de projetos que <span className="font-semibold text-indigo-600">desafiem minhas habilidades</span> e contribuam para minha evolução técnica e profissional.
+              Profissional de TI versátil, unindo sólida base em <span className="font-semibold text-indigo-600">Suporte Técnico</span> com habilidades práticas em <span className="font-semibold text-indigo-600">Desenvolvimento Full Stack Jr</span>.
+              Com vivência desde a manutenção de hardware e gestão de acessos (Active Directory e Google Workspace) até a criação de APIs, possuo uma visão de ponta a ponta da tecnologia.
+              Meu objetivo é aplicar essa capacidade de resolução de problemas e minha transição natural para a cultura DevOps em desafios complexos que exijam tanto a visão de suporte quanto a de engenharia de software.
             </p>
           </div>
         </section>
 
         {/* ── HABILIDADES ── */}
         <section className="animate-fade-in-up delay-400">
-          <SectionTitle icon={Code2}>Habilidades</SectionTitle>
-          <div className="flex flex-wrap gap-3">
-            {SKILLS.map((skill) => (
-              <span
-                key={skill}
-                className="px-4 py-2 bg-white border border-indigo-100 text-indigo-700 font-semibold text-sm rounded-xl shadow-sm hover:bg-indigo-50 hover:border-indigo-300 transition-all cursor-default"
-              >
-                {skill}
-              </span>
-            ))}
+          <SectionTitle icon={Code2}>Habilidades Técnicas</SectionTitle>
+
+          <div className="flex flex-col gap-6">
+            {/* Bloco Desenvolvimento */}
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Desenvolvimento & Dados</p>
+              <div className="flex flex-wrap gap-3">
+                {SKILLS.map((skill) => (
+                  <span
+                    key={skill}
+                    className="px-4 py-2 bg-white border border-indigo-100 text-indigo-700 font-semibold text-sm rounded-xl shadow-sm hover:bg-indigo-50 hover:border-indigo-300 transition-all cursor-default"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Bloco Suporte e Infraestrutura */}
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Suporte & Infraestrutura</p>
+              <div className="flex flex-wrap gap-3">
+                {SKILLS_SUPORTE.map((skill) => (
+                  <span
+                    key={skill}
+                    className="px-4 py-2 bg-slate-50 border border-slate-200 text-slate-700 font-semibold text-sm rounded-xl shadow-sm hover:bg-slate-100 transition-all cursor-default"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
           </div>
         </section>
-
         {/* ── PROJETOS ── */}
         <section className="animate-fade-in-up delay-500">
           <SectionTitle icon={Code2}>Projetos em Destaque</SectionTitle>
@@ -522,6 +557,9 @@ export default function App() {
             </a>
             <a href="mailto:erlizaellen@gmail.com" className="text-slate-400 hover:text-indigo-600 transition-colors">
               <Mail size={18} />
+            </a>
+            <a href="https://wa.me/5585996506534" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-emerald-500 transition-colors">
+              <MessageCircle size={18} />
             </a>
           </div>
         </div>
