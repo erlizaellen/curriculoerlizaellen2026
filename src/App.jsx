@@ -29,7 +29,8 @@ const SKILLS_SUPORTE = [
 ];
 const SKILLS_SOFT = [
   'Comunicação Assertiva', 'Resolução de Problemas', 'Liderança',
-  'Trabalho em Equipe', 'Visão Sistêmica', 'Proatividade', 'Entrega de resultados', 'Visão de Negócios', 'Rápido aprendizado', 'Resiliência',
+  'Trabalho em Equipe', 'Visão Sistêmica', 'Proatividade', 'Entrega de resultados', 'Visão de Negócios'
+  , 'Rápido aprendizado', 'Resiliência', 'Foco em resultados'
 ];
 
 const PROJECTS = [
