@@ -446,7 +446,7 @@ export default function App() {
 
         {/* ── HABILIDADES ── */}
         <section className="animate-fade-in-up delay-400">
-          <SectionTitle icon={Code2}>Habilidades Técnicas</SectionTitle>
+          <SectionTitle icon={Code2}>Habilidades</SectionTitle>
 
           <div className="flex flex-col gap-6">
             {/* Bloco Desenvolvimento */}
@@ -478,8 +478,25 @@ export default function App() {
                 ))}
               </div>
             </div>
+
+            {/* Bloco Soft Skills */}
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Comportamentais (Soft Skills)</p>
+              <div className="flex flex-wrap gap-3">
+                {SKILLS_SOFT.map((skill) => (
+                  <span
+                    key={skill}
+                    className="px-4 py-2 bg-violet-50 border border-violet-200 text-violet-700 font-semibold text-sm rounded-xl shadow-sm hover:bg-violet-100 transition-all cursor-default"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+
           </div>
         </section>
+
         {/* ── PROJETOS ── */}
         <section className="animate-fade-in-up delay-500">
           <SectionTitle icon={Code2}>Projetos em Destaque</SectionTitle>
