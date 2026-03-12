@@ -27,6 +27,10 @@ const SKILLS_SUPORTE = [
   'Suporte N1/N2', 'Google Workspace',
   'Manutenção de Hardware', 'Linux/Windows', 'DevOps', 'N8n Automations'
 ];
+const SKILLS_SOFT = [
+  'Comunicação Assertiva', 'Resolução de Problemas', 'Liderança',
+  'Trabalho em Equipe', 'Visão Sistêmica', 'Proatividade', 'Entrega de resultados', 'Visão de Negócios', 'Rápido aprendizado', 'Resiliência',
+];
 
 const PROJECTS = [
   {
