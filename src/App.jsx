@@ -434,7 +434,7 @@ export default function App() {
           <div className="bg-white rounded-2xl border border-slate-100 shadow-sm p-7">
             <p className="text-slate-600 leading-relaxed text-base">
               Profissional de TI versátil, unindo sólida base em <span className="font-semibold text-indigo-600">Suporte Técnico</span> com habilidades práticas em <span className="font-semibold text-indigo-600">Desenvolvimento Full Stack Jr</span>.
-              Com vivência desde a manutenção de hardware e gestão de acessos (Active Directory e Google Workspace) até a criação de APIs, possuo uma visão de ponta a ponta da tecnologia.
+              Vivência desde a manutenção de hardware e gestão de acessos Google Workspace e até a criação de APIs, possuo uma visão de ponta a ponta da tecnologia.
               Meu objetivo é aplicar essa capacidade de resolução de problemas e minha transição natural para a cultura DevOps em desafios complexos que exijam tanto a visão de suporte quanto a de engenharia de software.
             </p>
           </div>
