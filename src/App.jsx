@@ -20,8 +20,8 @@ import {
 
 // ─── DADOS DO CURRÍCULO ─────────────────────────────────────────────────────
 const SKILLS = [
-  'Java', 'JavaScript', 'Python', 'React', 'Node.js', 'PostgreSQL',
-  'SQL', 'DevOps', 'N8n', 'Supabase',
+  'Java', 'SpringBoot', 'JavaScript', 'Node.js', 'Python', 'React', 'PostgreSQL',
+  'SQL', 'DevOps', 'N8n', 'Supabase', 'GitHub', 'Git', 'HTML', 'CSS', 'CI/CD'
 ];
 const SKILLS_SUPORTE = [
   'Suporte N1/N2', 'Google Workspace',
@@ -34,6 +34,16 @@ const SKILLS_SOFT = [
 ];
 
 const PROJECTS = [
+  {
+    title: 'Gestão de Estoque',
+    role: 'Desenvolvedora',
+    description:
+      'Gestão de estoque para Loja de Celulares (em desenvolvimento)',
+    tech: ['Java, SpringBoot, SpringSecurity'],
+    color: 'indigo',
+    emoji: '📱',
+    link: 'https://github.com/erlizaellen/gestao-estoque',
+  },
   {
     title: 'Bem Pet',
     role: 'Tech Lead',
