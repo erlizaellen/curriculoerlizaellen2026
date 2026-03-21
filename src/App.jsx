@@ -29,7 +29,7 @@ const SKILLS_SUPORTE = [
 ];
 const SKILLS_SOFT = [
   'Comunicação Assertiva', 'Resolução de Problemas', 'Liderança',
-  'Trabalho em Equipe', 'Proatividade', 'Entrega de resultados', 'Visão de Negócios'
+  'Trabalho em Equipe', 'Proatividade', 'Visão de Negócios'
   , 'Rápido aprendizado', 'Resiliência', 'Foco em resultados'
 ];
 
@@ -89,15 +89,15 @@ const PROJECTS = [
 const COMMUNITIES = [
   {
     name: 'Arretadas do PHP',
-    role: 'Líder de Comunidade',
+    role: 'Líder da Comunidade',
     description: 'Comunidade que une mulheres desenvolvedoras PHP no Nordeste.',
     emoji: '🚀',
     link: 'https://www.instagram.com/arretadasdophp?igsh=YWpqdnoxZzIyN2R0',
   },
   {
     name: 'Comunidade HouseJs',
-    role: 'Líder Feminina',
-    description: 'Comunidade de desenvolvimento JavaScript com foco em inclusão feminina.',
+    role: 'Voluntária',
+    description: 'Comunidade de desenvolvimento JavaScript',
     emoji: '💛',
     link: 'https://www.instagram.com/comunidadehousejs?igsh=MWx5Z3V6eW14eW94aw==',
   },
@@ -136,6 +136,14 @@ const COURSES = [
     statusColor: 'indigo',
     icon: '🗄️',
     year: '',
+  },
+  {
+    title: 'Algoritmos e Lógica de Programação',
+    institution: 'Curso em Vídeo',
+    status: 'Concluído',
+    statusColor: 'emerald',
+    icon: '🔢',
+    year: '2026',
   },
   {
     title: 'Geração Tech — Formação Full Stack',
@@ -193,14 +201,7 @@ const COURSES = [
     icon: '🧩',
     year: '2024',
   },
-  {
-    title: 'Algoritmos e Lógica de Programação',
-    institution: 'Curso em Vídeo',
-    status: 'Concluído',
-    statusColor: 'emerald',
-    icon: '🔢',
-    year: '2026',
-  },
+
   {
     title: 'Semana do Python',
     institution: 'EmpowerData',
