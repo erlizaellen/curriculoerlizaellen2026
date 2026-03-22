@@ -13,6 +13,7 @@ import {
   FileDown,
   FileText,
   MessageCircle,
+  Analytics
 } from 'lucide-react';
 
 // Se o arquivo de gerar Word existir na mesma pasta, descomente a linha abaixo:
